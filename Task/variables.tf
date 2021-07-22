@@ -1,3 +1,10 @@
+variable "ssh-location" {
+    default = 0.0.0.0/0
+    description = "Ip address that can SSH into Bastion" 
+    type = string
+}
+
+
 variable "vpc-cidr" {
     default = 10.0.0.0/16
     description = "VPC CIDR Block"
